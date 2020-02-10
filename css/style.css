@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../img/canadian-dollar.png");
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .75em;
+    background-color: rgb(73, 225, 236);
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+
+}
+#sidebar-menu{
+    display: none;
+}
+
+.nav-bar-title{
+    display: inline-block;
+    font-family: 'Russo One', sans-serif;
+
+}
+.fa{
+    color: black;
+}
+
+.menu-button{
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#hamburger-menu{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    max-width: 70px;
+    z-index: 1;
+
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+
+}
+
+/*
+    hover
+*/
+.dropdown-content a:hover{
+    background-color: rgb(42, 236, 236);
+    color: black;
+
+}
+
+#hamburger-menu:hover .dropdown-content{
+    display: block;
+
+}
+
+#hamburger-menu:hover .menu-button{
+    background-color: transparent;
+
+}
+
+/*
+    focus
+*/
+.dropdown-content a:focus{
+    background-color: white;
+    color: black;
+}
+
+#hamburger-menu:focus .dropdown-content{
+    display: block;
+}
+
+#hamburger-menu:focus .menu-button{
+    background-color: transparent;
+}
+
+/*
+    active
+*/
+.dropdown-content a:active{
+    background-color: white;
+    color: black;
+}
+
+#hamburger-menu:active .dropdown-content{
+    display: block;
+}
+
+#hamburger-menu:active .menu-button{
+    background-color: transparent;
+}
+
+
+main{
+    position: absolute;
+    display: block;
+    margin-top: 8em;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 3em;
+    text-align: center;
+
+}
+.flex-container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+}
+.card-deck{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.card{
+    flex: 0 0 250px;
+    background-color: white;
+    margin: 2rem;
+    padding: .25rem;
+    border-radius: 5px;
+    outline: black;
+    outline-style: dotted;
+}
+.search-deck{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.search-movie{
+    flex: 0 0 250px;
+    background-image: url("../img/cinema.jpg");
+    background-repeat: none;
+    background-size: cover;
+    margin: 2rem;
+    padding: .25rem;
+    min-height: 180px;
+    border-radius: 5px;
+    outline: black;
+    outline-style: double;
+    margin: 2rem;
+    padding: .25rem;
+
+}
+.search-games{
+    flex: 0 0 250px;
+    background-image: url("../img/games.png");
+    background-repeat: none;
+    background-size: 100%;
+    margin: 2rem;
+    padding: .25rem;
+    min-height: 190px;
+    border-radius: 5px;
+    outline: black;
+    outline-style: double;
+    margin: 2rem;
+    padding: .25rem;
+
+}
+.search-tv{
+    flex: 0 0 250px;
+    background-image: url("../img/TVShow.jpg");
+    background-repeat: none;
+    background-size: cover;
+    margin: 2rem;
+    padding: .25rem;
+    min-height: 230px;
+    border-radius: 5px;
+    outline: black;
+    outline-style: double;
+    margin: 2rem;
+    padding: .25rem;
+
+}
+.API-documentation{
+    background-image: url("../img/red-confetti-3774082_1920.png");
+    background-color: white;
+    border-radius: 5px;
+    outline: black;
+    outline-style: double;
+    font-weight: bold;
+    margin: 5em;
+
+}
+
+img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    float: right;
+}
+
+footer{
+    position: fixed;
+    font-size: 12px;
+    bottom: 0;
+    background-color: rgb(73, 225, 236);
+    text-align: center;
+    width: 100%;
+}
+footer a{
+    color: black;
+}
+@media (min-width: 1024px)
+{
+    #hamburger-menu{
+        display: none;
+    }
+    #sidebar-menu{
+        margin: 0;
+        padding: 0;
+        width: 70px;
+        background-color: rgb(73, 225, 236);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        height: 100%;
+        overflow: auto;
+        display: block;
+    }
+    #sidebar-menu a{
+        display: block; 
+        margin: 100px 0px 100px;
+        
+    }
+    a.movie{
+        padding: 40px 0px;
+        background-image: url("../img/icons8-film-reel-64.png");
+        background-repeat: no-repeat;
+    }
+    a.tv{
+        background-repeat: no-repeat;
+        padding: 40px 0px;
+        background-image: url("../img/icons8-tv-64.png");
+    }
+   
+    a.videogame{
+        background-repeat: no-repeat;
+        padding: 40px 0px;
+        background-image: url("../img/icons8-game-controller-64.png");
+    }
+    a.search{
+        background-repeat: no-repeat;
+        padding: 40px 0px;
+        background-image: url("../img/icons8-search-64.png");
+    }
+    a.home{
+        background-repeat: no-repeat;
+        padding: 40px 0px;
+        background-image: url("../img/icons8-home-64.png");
+    }
+    .card-deck{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        max-width: 50%;
+        margin-bottom: 200px;
+        font-size: 24px;
+    }
+    .search-deck{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+    .search-movie{
+        
+        margin-right: 15rem;
+        width: 500px;
+        height: 200px;
+    }
+    .search-tv{
+        width: 10px;
+        height: 10px;
+        margin-right: 15rem;
+    }
+    .search-games{
+        width: 500px;
+        height: 200px;
+        margin-right: 15rem;
+    }
+    
+        
+    
+   
+    main{
+        margin-left: 100px;
+    }
+   
+    
+
+}
