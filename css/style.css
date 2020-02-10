@@ -40,6 +40,9 @@ nav{
 #hamburger-menu{
     display: inline-block;
 }
+footer a{
+    color: black;
+}
 
 .dropdown-content{
     display: none;
@@ -152,14 +155,12 @@ main{
     background-image: url("../img/cinema.jpg");
     background-repeat: none;
     background-size: cover;
-    margin: 2rem;
     padding: .25rem;
     min-height: 180px;
     border-radius: 5px;
     outline: black;
     outline-style: double;
     margin: 2rem;
-    padding: .25rem;
 
 }
 .search-games{
@@ -173,8 +174,7 @@ main{
     border-radius: 5px;
     outline: black;
     outline-style: double;
-    margin: 2rem;
-    padding: .25rem;
+    
 
 }
 .search-tv{
@@ -188,9 +188,7 @@ main{
     border-radius: 5px;
     outline: black;
     outline-style: double;
-    margin: 2rem;
-    padding: .25rem;
-
+    
 }
 .API-documentation{
     background-image: url("../img/red-confetti-3774082_1920.png");
@@ -218,9 +216,7 @@ footer{
     text-align: center;
     width: 100%;
 }
-footer a{
-    color: black;
-}
+
 @media (min-width: 1024px)
 {
     #hamburger-menu{
